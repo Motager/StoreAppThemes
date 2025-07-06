@@ -1,6 +1,5 @@
 package org.motager.storethemes.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -23,7 +22,11 @@ private val DarkColorScheme = darkColorScheme(
     outline = Outline,
     tertiary = Muted,
     onTertiary = OnMuted,
-    scrim = Input
+    scrim = Input,
+    error = Error,
+    onError = OnError,
+    surfaceVariant = PopOver,
+    onSurfaceVariant = OnPopOver,
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -38,7 +41,11 @@ private val LightColorScheme = lightColorScheme(
     outline = Outline,
     tertiary = Muted,
     onTertiary = OnMuted,
-    scrim = Input
+    scrim = Input,
+    error = Error,
+    onError = OnError,
+    surfaceVariant = PopOver,
+    onSurfaceVariant = OnPopOver,
 )
 
 @Composable
